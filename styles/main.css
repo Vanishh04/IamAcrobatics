@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+.page-wrap {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url(/images/DSC_8086.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.main-nav-list-item {
+  list-style: none;
+}
+
+.main-nav {
+  padding: 30px 0;
+}
+.main-nav-list-item {
+  list-style: none;
+}
+.main-nav-list-link {
+  text-decoration: none;
+}
+
+.main-textbox {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+.main-textbox-title {
+  padding-bottom: 10px;
+}
+.main-textbox-text {
+  padding-bottom: 20px;
+}
+.main-visit-button {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: all 0.9s ease;
+}
+.main-visit-button:hover {
+  transform: scale(0.9);
+}
+
+.header-main-logo {
+  text-decoration: none;
+}
+
+.language-menu {
+  background-color: transparent;
+  border: none;
+}
+.language-menu:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* ------------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------- variables ----------------------------------------------*/
+/*--------------- fonts properties ---------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fz12 {
+  font-size: 12px;
+}
+
+.fz14 {
+  font-size: 14px;
+}
+
+.fz16 {
+  font-size: 16px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+.fz20 {
+  font-size: 20px;
+}
+
+.fz22 {
+  font-size: 22px;
+}
+
+.fz24 {
+  font-size: 24px;
+}
+
+.fz28 {
+  font-size: 28px;
+}
+
+.fz36 {
+  font-size: 36px;
+}
+
+.fz38 {
+  font-size: 38px;
+}
+
+.fz42 {
+  font-size: 42px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+/*-------------- color ---------------*/
+.black {
+  color: #000000;
+}
+
+.white {
+  color: #fff;
+}
+
+/*----------------- gap --------------------*/
+.gap10 {
+  gap: 10px;
+}
+
+.gap15 {
+  gap: 15px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.gap25 {
+  gap: 25px;
+}/*# sourceMappingURL=main.css.map */

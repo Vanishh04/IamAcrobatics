@@ -1,0 +1,122 @@
+/* ------------------------------------------------------------------------ */
+
+
+/* -------------------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------------- variables ----------------------------------------------*/
+
+$fz12:12px;
+$fz14:14px;
+$fz16:16px;
+$fz18:18px;
+$fz20:20px;
+$fz22:22px;
+$fz24:24px;
+$fz28:28px;
+$fz36:36px;
+$fz38:38px;
+$fz42:42px;
+
+$fw400:400;
+$fw500:500;
+$fw600:600;
+$fw700:700;
+$fw800:800;
+
+$gap10:10px;
+$gap20:20px;
+$gap15:15px;
+$gap25:25px;
+
+$black:#000000;
+$white:#fff;
+
+
+
+/*--------------- fonts properties ---------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fz12{
+  font-size: $fz12;
+}
+.fz14{
+    font-size: $fz14;
+}
+.fz16{
+    font-size: $fz16;
+}
+.fz18{
+    font-size: $fz18;
+}
+.fz20{
+    font-size: $fz20;
+}
+.fz22{
+    font-size: $fz22;
+}
+.fz24{
+    font-size: $fz24;
+}
+.fz28{
+    font-size: $fz28;
+}
+.fz36{
+    font-size: $fz36;
+}
+.fz38{
+    font-size: $fz38;
+}
+.fz42{
+    font-size: $fz42;
+}
+
+.fw400{
+    font-weight: $fw400;
+}
+.fw500{
+    font-weight: $fw500;
+}
+.fw600{
+    font-weight: $fw600;
+}
+.fw700{
+    font-weight: $fw700;
+}
+.fw800{
+    font-weight: $fw800;
+}
+/*-------------- color ---------------*/
+
+.black{
+    color: $black;
+}
+.white{
+    color: $white;
+}
+
+
+/*----------------- gap --------------------*/
+
+.gap10{
+    gap:$gap10;
+}
+.gap15{
+    gap:$gap15;
+}
+.gap20{
+    gap:$gap20;
+}
+.gap25{
+    gap:$gap25;
+}
