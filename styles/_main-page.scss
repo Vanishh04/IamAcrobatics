@@ -1,10 +1,15 @@
+@import './style';
+
 .page-wrap{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url('../images/DSC_8086.jpg');
+    background-image:linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)),url('../images/DSC_8086.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-nav-list-item{
@@ -16,18 +21,33 @@
     padding: 30px 0;
     &-list-item{
         list-style: none;
-        
     }
     &-list-link{
         text-decoration: none;
+        color: $white;
+        position: relative;
+        
+        &::before{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: $main-color;
+            bottom: 1px;
+            transition: all 0.9s ease;
+        }
+        &:hover{
+           color: $main-color;
+           &::before{
+           width: 100%;
+           }
+        }
+        
     }
 }
 
 .main{
     &-textbox{
-        min-height: 100vh;
-        overflow-x: hidden;
-        position: relative;
         &-title{
             padding-bottom: 10px;
         }
@@ -40,10 +60,12 @@
         padding: 15px 30px;
         border-radius: 12px;
         background-color: transparent;
-        border: 1px solid #fff;
+        border: 2px solid $white;
         transition: all 0.9s ease;
         &:hover{
             transform: scale(0.9);
+            border-color: $main-color;
+            color: $main-color;
         }
     }
 }
@@ -52,12 +74,38 @@
     text-decoration: none;
 }
 
+.header-container{
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 .language-menu{
     background-color: transparent;
     border: none;
+    color: $white;
+    transition: all 0.8s ease;
     &:hover{
-        color: #fff;
+        color: $main-color;
         background-color: transparent;
     }
 }
 
+.language-dropdown-menu{
+    background-color: $sky-blue;
+}
+.language-dropdown-item{
+    transition: all 0.9s ease;
+    &:hover{
+        background-color: $alice-blue;
+    }
+}
+
+.arrow-down-icon{
+    transition: all 0.9s ease;
+    &:hover{
+        color: $main-color;
+        transform: scale(0.9);
+    }
+}

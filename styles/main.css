@@ -1,11 +1,131 @@
+/* ------------------------------------------------------------------------ */
+/* -------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------- variables ----------------------------------------------*/
+/*--------------- fonts properties ---------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fz12 {
+  font-size: 12px;
+}
+
+.fz14 {
+  font-size: 14px;
+}
+
+.fz16 {
+  font-size: 16px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+.fz20 {
+  font-size: 20px;
+}
+
+.fz22 {
+  font-size: 22px;
+}
+
+.fz24 {
+  font-size: 24px;
+}
+
+.fz28 {
+  font-size: 28px;
+}
+
+.fz36 {
+  font-size: 36px;
+}
+
+.fz38 {
+  font-size: 38px;
+}
+
+.fz42 {
+  font-size: 42px;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+/*-------------- color ---------------*/
+.black {
+  color: #000000;
+}
+
+.white {
+  color: #fff;
+}
+
+.main-color {
+  color: #1877F2;
+}
+
+.sky-blue {
+  color: #87CEFA;
+}
+
+.alice-blue {
+  color: #0071c5;
+}
+
+/*----------------- gap --------------------*/
+.gap10 {
+  gap: 10px;
+}
+
+.gap15 {
+  gap: 15px;
+}
+
+.gap20 {
+  gap: 20px;
+}
+
+.gap25 {
+  gap: 25px;
+}
+
 .page-wrap {
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.8), rgba(4, 9, 30, 0.8)), url("../images/DSC_8086.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-nav-list-item {
@@ -20,13 +140,25 @@
 }
 .main-nav-list-link {
   text-decoration: none;
-}
-
-.main-textbox {
-  min-height: 100vh;
-  overflow-x: hidden;
+  color: #fff;
   position: relative;
 }
+.main-nav-list-link::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #1877F2;
+  bottom: 1px;
+  transition: all 0.9s ease;
+}
+.main-nav-list-link:hover {
+  color: #1877F2;
+}
+.main-nav-list-link:hover::before {
+  width: 100%;
+}
+
 .main-textbox-title {
   padding-bottom: 10px;
 }
@@ -38,24 +170,54 @@
   padding: 15px 30px;
   border-radius: 12px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   transition: all 0.9s ease;
 }
 .main-visit-button:hover {
   transform: scale(0.9);
+  border-color: #1877F2;
+  color: #1877F2;
 }
 
 .header-main-logo {
   text-decoration: none;
 }
 
+.header-container {
+  max-width: 1340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .language-menu {
   background-color: transparent;
   border: none;
+  color: #fff;
+  transition: all 0.8s ease;
 }
 .language-menu:hover {
-  color: #fff;
+  color: #1877F2;
   background-color: transparent;
+}
+
+.language-dropdown-menu {
+  background-color: #87CEFA;
+}
+
+.language-dropdown-item {
+  transition: all 0.9s ease;
+}
+.language-dropdown-item:hover {
+  background-color: #0071c5;
+}
+
+.arrow-down-icon {
+  transition: all 0.9s ease;
+}
+.arrow-down-icon:hover {
+  color: #1877F2;
+  transform: scale(0.9);
 }
 
 /* ------------------------------------------------------------------------ */
@@ -143,6 +305,18 @@ body {
 
 .white {
   color: #fff;
+}
+
+.main-color {
+  color: #1877F2;
+}
+
+.sky-blue {
+  color: #87CEFA;
+}
+
+.alice-blue {
+  color: #0071c5;
 }
 
 /*----------------- gap --------------------*/
