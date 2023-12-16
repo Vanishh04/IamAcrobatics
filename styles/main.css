@@ -8,6 +8,22 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /*-------------------- variables ----------------------------------------------*/
 /*--------------- fonts properties ---------------*/
 body {
@@ -116,6 +132,32 @@ body {
   gap: 25px;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.main-page-about-h1 {
+  text-transform: uppercase;
+  color: #1877F2;
+  letter-spacing: 1px;
+}
+.main-page-about-a {
+  color: #0071c5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+}
+.main-page-about-a:hover {
+  color: #87CEFA;
+}
+.main-page-about-h2 {
+  color: #1877F2;
+}
+
+.about-section-h1 {
+  color: #1877F2;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
 .page-wrap {
   min-height: 100vh;
   width: 100%;
@@ -150,7 +192,7 @@ body {
   width: 0%;
   background-color: #1877F2;
   bottom: 1px;
-  transition: all 0.9s ease;
+  transition: all 0.3s ease;
 }
 .main-nav-list-link:hover {
   color: #1877F2;
@@ -171,7 +213,7 @@ body {
   border-radius: 12px;
   background-color: transparent;
   border: 2px solid #fff;
-  transition: all 0.9s ease;
+  transition: all 0.3s ease;
 }
 .main-visit-button:hover {
   transform: scale(0.9);
@@ -194,7 +236,7 @@ body {
   background-color: transparent;
   border: none;
   color: #fff;
-  transition: all 0.8s ease;
+  transition: all 0.3s ease;
 }
 .language-menu:hover {
   color: #1877F2;
@@ -206,7 +248,7 @@ body {
 }
 
 .language-dropdown-item {
-  transition: all 0.9s ease;
+  transition: all 0.3s ease;
 }
 .language-dropdown-item:hover {
   background-color: #0071c5;
@@ -247,7 +289,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    transition: all 0.6s ease;
+    transition: all 0.5s ease-out;
   }
   .main-nav-list.active {
     width: 100%;
@@ -293,12 +335,50 @@ body {
     max-width: 280px;
   }
 }
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.main-page-about-acrobatics-title {
+  padding: 30px 0 10px;
+}
+
+.about-acrobatics-img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+}
+.about-acrobatics-img-item {
+  max-width: 400px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  .about-acrobatics-img-cards-row {
+    justify-content: center !important;
+  }
+}
 /* ------------------------------------------------------------------------ */
 /* -------------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*-------------------- variables ----------------------------------------------*/

@@ -1,5 +1,39 @@
 @import './style';
 
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.main-page{
+    &-about-h1{
+        text-transform: uppercase;
+        color: $main-color;
+        letter-spacing: 1px;
+    }
+    &-about-a{
+        color: $alice-blue;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.4s ease;
+        &:hover{
+            color: $sky-blue;
+        }
+    }
+    &-about-h2{
+        color: $main-color;
+    }
+}
+
+.about-section{
+    &-h1{
+        color: $main-color;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
 .page-wrap{
     min-height: 100vh;
     width: 100%;
@@ -35,7 +69,7 @@
             width: 0%;
             background-color: $main-color;
             bottom: 1px;
-            transition: all 0.9s ease;
+            transition: all 0.3s ease;
         }
         &:hover{
            color: $main-color;
@@ -62,7 +96,7 @@
         border-radius: 12px;
         background-color: transparent;
         border: 2px solid $white;
-        transition: all 0.9s ease;
+        transition: all 0.3s ease;
         &:hover{
             transform: scale(0.9);
             border-color: $main-color;
@@ -86,7 +120,7 @@
     background-color: transparent;
     border: none;
     color: $white;
-    transition: all 0.8s ease;
+    transition: all 0.3s ease;
     &:hover{
         color: $main-color;
         background-color: transparent;
@@ -97,7 +131,7 @@
     background-color: $sky-blue;
 }
 .language-dropdown-item{
-    transition: all 0.9s ease;
+    transition: all 0.3s ease;
     &:hover{
         background-color: $alice-blue;
     }
@@ -137,7 +171,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        transition: all 0.6s ease;
+        transition: all 0.5s ease-out;
     }
     .main-nav-list.active{
         width: 100%;
@@ -183,3 +217,31 @@
         max-width: 280px;
     }
 }
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+.main-page-about-acrobatics-title{
+    padding: 30px 0 10px;
+}
+
+.about-acrobatics{
+    &-img{
+        max-width: 400px;
+        width: 100%;
+        border-radius: 18px;
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+    &-img-item{
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+@media screen  and (max-width:1140px){
+    .about-acrobatics-img-cards-row{
+        justify-content: center!important;
+    }
+}
+

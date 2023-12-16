@@ -9,6 +9,22 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.pt20{
+    padding-top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /*-------------------- variables ----------------------------------------------*/
 
 $fz12:12px;
@@ -130,3 +146,4 @@ body{
 .gap25{
     gap:$gap25;
 }
+
