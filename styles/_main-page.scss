@@ -237,10 +237,42 @@
         max-width: 400px;
         width: 100%;
     }
+    &-section-age-groups-points-item{
+        max-width: 400px;
+        width: 100%;
+        background-color: $sky-blue;
+        padding: 25px;
+        border-radius: 18px;
+        border: 2px solid $main-color;
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+    &-section-age-groups-points-item-title{
+        color: $indigo-dye;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    &-section-age-groups-points-item-list-element{
+        padding: 10px 0 10px;
+        font-size: $fz22;
+        font-weight: $fw500;
+        text-align: center;
+    }
+    &-section-age-groups-points-item-limits-element{
+        padding: 10px 0 10px;
+        font-size: $fz20;
+        font-weight: $fw400;
+        border-top: 1px solid $main-color;
+    }
 }
 
 @media screen  and (max-width:1140px){
     .about-acrobatics-img-cards-row{
+        justify-content: center!important;
+    }
+}
+
+@media screen  and (max-width:890px){
+    .about-acrobatics-section-age-groups-points-row{
         justify-content: center!important;
     }
 }
