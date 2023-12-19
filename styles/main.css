@@ -381,6 +381,20 @@ body {
   font-weight: 400;
   border-top: 1px solid #1877F2;
 }
+.about-acrobatics-section-button-link {
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 2px solid #1877F2;
+  transition: all 0.5s ease;
+}
+.about-acrobatics-section-button-link:hover {
+  transform: scale(0.9);
+  border-color: #1877F2;
+  background-color: #0071c5;
+  color: #fff;
+}
 
 @media screen and (max-width: 1140px) {
   .about-acrobatics-img-cards-row {
