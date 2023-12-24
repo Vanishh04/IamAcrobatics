@@ -412,6 +412,128 @@ body {
   color: #1877F2;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.articles-and-researches {
+  padding-top: 40px;
+}
+.articles-and-researches-quotes {
+  font-size: 36px;
+  font-weight: 700;
+  color: #00416A;
+  display: inline-block;
+}
+.articles-and-researches-readmore-dotes-link {
+  font-size: 28px;
+  font-weight: 500;
+  color: #1877F2;
+}
+.articles-and-researches-img-item {
+  max-width: 340px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 8px 8px 24px 0px rgb(66, 68, 90);
+}
+.articles-and-researches-img-row {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .articles-and-researches-img-row {
+    justify-content: center !important;
+  }
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.interviews {
+  padding-top: 40px;
+}
+
+.interview-item-header-img {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  border-radius: 50%;
+  background-color: #87CEFA;
+}
+.interview-item-header-flag-type {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+.interview-item-body-main-achievement {
+  border-bottom: 1px solid #1877F2;
+}
+.interview-item-footer-social-links-item {
+  font-size: 38px;
+  font-weight: 500;
+  color: #1877F2;
+  cursor: pointer;
+  transition: all 0.9s ease;
+}
+.interview-item-footer-social-links-item:hover {
+  color: #87CEFA;
+  transform: scale(0.9);
+}
+.interview-item {
+  padding: 18px 20px;
+  background-color: #FAFAFA;
+  border: 2px solid #0071c5;
+  border-radius: 12px;
+}
+.interview-carousel-control-button {
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: #1877F2;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+}
+.interview-carousel-control-button:hover {
+  background-color: #00416A;
+}
+.interview-carousel {
+  padding-bottom: 20px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+.footer {
+  background-color: #87CEFA;
+}
+.footer-social-link-item {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #87CEFA;
+  border-radius: 50%;
+  color: #1877F2;
+  transition: all 0.8s ease;
+}
+.footer-social-link-item:hover {
+  background-color: #fff;
+  transform: scale(0.8);
+  transform: rotateY(45deg);
+}
+.footer-copyright-reserved {
+  border-top: 1px solid #1877F2;
+  border-bottom: 1px solid #1877F2;
+  padding-top: 10px;
+}
+.footer-social-links {
+  padding-bottom: 30px;
+}
+
 /* ------------------------------------------------------------------------ */
 /* -------------------------------------------------------------------------*/
 * {
