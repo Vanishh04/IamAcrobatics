@@ -1,0 +1,41 @@
+.articles-and-researches{
+    &-page-row{
+        padding-top: 40px;
+    }
+    &-page-row-item{
+        border: 2px solid $alice-blue;
+        border-radius: 12px;
+        padding: 10px 15px;
+        background-color: transparent;
+        margin-bottom: 20px;
+        &-textbox-button{
+            border: none;
+            padding: 10px 15px;
+            background-color: $main-color;
+            color: $white;
+            border-radius: 8px;
+            transition: all 0.8s ease;
+            &:hover{
+                background-color: $alice-blue;
+                transform: scale(0.9);
+            }
+        }
+        &-textbox-main-title{
+            color: $main-color;
+        }
+        &-textbox-publication-date{
+            color: $indigo-dye;
+        }
+    }
+    &-page-row-item-img{
+        height: 100%;
+        max-width: 380px;
+        width: 100%;
+        border-radius: 14px;
+        background-color: transparent;
+    }
+    &-page-row-item-textbox{
+        max-width: 600px;
+        width: 100%;
+    }
+}
